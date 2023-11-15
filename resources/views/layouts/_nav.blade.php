@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="headerNav">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ url('/') }}">
-            {{ config('lorekeeper.settings.site_name', 'Lorekeeper') }}
+            {{ config('lorekeeper.settings.site_name', 'GoA') }}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
@@ -133,9 +133,31 @@
                     @endif
                 @else
                     @if(Auth::user()->isStaff)
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="{{ url('admin') }}"><i class="fas fa-crown"></i></a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('admin') }}">Admin</a>
                         </li>
+
+                        <!-- <li class="nav-item dropdown">
+                        <a id="browseDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                           <a class="nav-link" href="{{ url('admin') }}">Admin</a> 
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="browseDropdown">
+                            <a class="dropdown-item" href="{{ url('submissions/new') }}">
+                                Submit Prompt
+                            </a>
+                            <a class="dropdown-item" href="{{ url('claims/new') }}">
+                                Submit Claim
+                            </a>
+                            <a class="dropdown-item" href="{{ url('reports/new') }}">
+                                Submit Report
+                            </a>
+                        </div>
+                    </li> -->
                     @endif
                     @if(Auth::user()->notifications_unread)
                         <li class="nav-item">
