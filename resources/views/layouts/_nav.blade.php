@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="headerNav">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ url('/') }}">
-            {{ config('lorekeeper.settings.site_name', 'GoA') }}
+            <!-- {{ config('lorekeeper.settings.site_name', 'GoA') }} -->
+            Home
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
@@ -14,7 +15,7 @@
                     @if(Auth::check() && Auth::user()->is_news_unread && Config::get('lorekeeper.extensions.navbar_news_notif'))
                         <a class="nav-link d-flex text-warning" href="{{ url('news') }}"><strong>News</strong><i class="fas fa-bell"></i></a>
                     @else
-                        <a class="nav-link" href="{{ url('news') }}">News</a>
+                        <!-- <a class="nav-link" href="{{ url('news') }}">News</a> -->
                     @endif
                 </li>
                 <li class="nav-item">
@@ -138,7 +139,7 @@
                         </li> -->
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('admin') }}">Admin</a>
+                            <a class="nav-link" href="{{ url('admin') }}">Manage</a>
                         </li>
 
                         <!-- <li class="nav-item dropdown">
@@ -185,6 +186,8 @@
                     
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="{{ Auth::user()->url }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <i class="{{(Auth::user()->rank->icon ? Auth::user()->rank->icon : 'fas fa-user')}} mr-1"></i>
+                        <!-- Member -->
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 

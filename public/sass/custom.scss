@@ -1,7 +1,111 @@
-.bg-dark {
-  background-color: #292a2c!important;
+// Colors 
+$base-dark: #322f31;
+$secondary: #292a2c;
+$darker-color: #1a1f20;
+$faded_text: rgb(197, 197, 197);
+$accent: rgba(0, 205, 224, 0.644);
+
+body {
+  color-scheme: dark;
 }
 
-// main {
-//   background-color: #383439;
+
+// #app{
+//   background-color: $base-dark;
+//   background-image: url("../images/background-texture.png");
+//   background-repeat: repeat;
+//   background-size: 80px;
+// }
+
+// .container-fluid #background {
+//   background-color: $base-dark;
+// }
+
+// #headerNav {
+//   background-color: $secondary!important;
+// }
+
+// .main-content {
+//   background-color: rgb(95, 98, 102);
+//   .card {
+//     background-color: $secondary!important;
+//     color: rgb(167, 167, 167);
+//   }
+// }
+
+// .card-header {
+//   .card-title {
+//     color: $accent;
+//   }
+// }
+// // Remove form-control from Promt in prompt submission? 
+// .form-control {
+//   background-color: $darker-color!important;
+//   border: none;
+//   color: $faded_text;
+//   &:focus {color: $faded_text;}
+// }
+
+// .card {
+//   &.mb-3 {
+//     background-color: $secondary!important;
+//     color: $faded_text;
+//   }
+// }
+
+// .text-right {
+//   & a {color: $accent;}
+// }
+
+// table {
+//   & tr, th, td {
+//     border: none!important;
+//     color: $faded_text;
+//   }
+//   & thead {
+//     background-color: #1a1f20!important;
+//   }
+//   & tbody {
+//     & tr{background-color: $secondary!important;}
+//     & tr:nth-child(even){background-color: $darker-color!important}
+//   }
+// }
+
+// .breadcrumb {
+//   .breadcrumb-item {
+//     & a {color: $faded_text;}
+//   }
+//   .breadcrumb-item.active {color: $accent;}
+// }
+// .ubt-bottom {
+//   border-bottom: none;
+//   // background-color: $darker-color;
+// }
+// .ubt-top {border-top: none;}
+// // .ubt-top:first {border-top: 1px solid #1a1f20;}
+
+// .ml-md-2 > div:first-of-type {
+//   background-color: $darker-color;
+//   color: $accent;
+//   padding: .5em;
+// }
+
+// .ml-md-2 > div{
+//   background-color: #575757;
+//   padding: .3em;
+//   border-radius: .2em;
+
+// }
+// .ml-md-2 > div:nth-child(even) {
+//   background-color: transparent;
+// }
+// .nav-tabs {
+//   border-bottom: 1px solid $darker-color;
+//   .nav-link.active {
+//     border-color: $darker-color;
+//     color: $accent;
+//   }
+//   .nav-link:hover {
+//     border-color: $accent;
+//   }
 // }

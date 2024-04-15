@@ -71,6 +71,7 @@
     <link href="{{ asset('css/jquery-ui-timepicker-addon.css') }}" rel="stylesheet">
     <link href="{{ asset('css/croppie.css') }}" rel="stylesheet">
     <link href="{{ asset('css/selectize.bootstrap4.css') }}" rel="stylesheet">
+    <link href="{{ asset('images/favicon.png') }}" rel="icon">
 
     @if(file_exists(public_path(). '/css/custom.css'))
         <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
@@ -79,7 +80,7 @@
 </head>
 <body>
     <div id="app">
-        <div class="site-header-image" id="header" style="background-image: url('{{ asset('images/header.png') }}');"></div>
+        <div class="site-header-image" id="header" style="background-image: url('{{ asset('images/header.png') }}');background-position-y: center; background-position-x: center; background-repeat:no-repeat;background-size: cover;"></div>
         @include('layouts._nav')
         @if ( View::hasSection('sidebar') )
 			<div class="site-mobile-header bg-secondary"><a href="#" class="btn btn-sm btn-outline-light" id="mobileMenuButton">Menu <i class="fas fa-caret-right ml-1"></i></a></div>

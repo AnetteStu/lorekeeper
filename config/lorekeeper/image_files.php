@@ -17,6 +17,21 @@ return [
         'description' => 'The header banner displayed at the top of the page. PNG format, default height of 200px. Tiles in both directions.',
         'filename' => 'header.png'
     ],
+    'intro' => [
+        'name' => 'Intro',
+        'description' => 'Image used for the front page decoration.',
+        'filename' => 'intro.png'
+    ], 
+    'favicon' => [
+        'name' => 'Favicon',
+        'description' => 'Small image for the lorekeeper Tab.',
+        'filename' => 'favicon.png'
+    ],     
+    'background-texture' => [
+        'name' => 'Background texture',
+        'description' => 'Image used for the background decoration.',
+        'filename' => 'background-texture.png'
+    ],
     'characters' => [
         'name' => 'Characters Icon',
         'description' => 'The characters graphic on the front page. PNG format, default size of 200px x 200px (no restriction).',

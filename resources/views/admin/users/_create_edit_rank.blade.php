@@ -55,7 +55,7 @@
     @endif
 
     <div class="text-right">
-        {!! Form::submit($rank->id ? 'Edit' : 'Create', ['class' => 'btn btn-primary']) !!}
+        {!! Form::submit($rank->id ? 'Save' : 'Create', ['class' => 'btn btn-primary']) !!}
     </div>
 
     {!! Form::close() !!}

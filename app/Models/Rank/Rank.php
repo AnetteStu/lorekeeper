@@ -128,3 +128,4 @@ class Rank extends Model
         return Arr::only(Config::get('lorekeeper.powers'), $powers);
     }
 }
+    

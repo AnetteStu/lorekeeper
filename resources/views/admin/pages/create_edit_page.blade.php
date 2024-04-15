@@ -10,7 +10,7 @@
         <a href="#" class="btn btn-danger float-right delete-page-button">Delete Page</a>
     @endif
     @if($page->id)
-        <a href="{{ $page->url }}" class="btn btn-info float-right mr-md-2">View Page</a>
+        <a href="{{ $page->url }}" target="_blank" class="btn btn-info float-right mr-md-2" title="Opens page in a new tab">View Page</a>
     @endif
 </h1>
 
@@ -53,10 +53,11 @@
             {!! Form::label('can_comment', 'Commentable', ['class' => 'form-check-label ml-3']) !!} {!! add_help('If this is turned on, users will be able to comment on the page.') !!}
         </div>
     </div>
-</div>
-
-<div class="text-right">
-    {!! Form::submit($page->id ? 'Edit' : 'Create', ['class' => 'btn btn-primary']) !!}
+    <div class="col-md-4">
+        <div class="form-group d-flex justify-content-end">
+            {!! Form::submit($page->id ? 'Save' : 'Create', ['class' => 'btn btn-primary']) !!}
+        </div>
+    </div>
 </div>
 
 {!! Form::close() !!}
